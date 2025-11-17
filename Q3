@@ -3,7 +3,6 @@ class InvalidGradeException extends Exception {
         super(message);
     }
 }
-
 public class StudentGrade {
     static void checkGrade(int marks) throws InvalidGradeException {
         if (marks > 100)
@@ -11,7 +10,6 @@ public class StudentGrade {
         else
             System.out.println("Valid marks: " + marks);
     }
-
     public static void main(String[] args) {
         try {
             checkGrade(120);
